@@ -10,7 +10,8 @@ TechStack
 
 1. Language: The Project is Built using Java on Spring Tool Suite. For using inbuilt features(Like Thread) and performance factor    of Java, I have decided to Go with Spring on Java. 
 2. Database: 
-      a. Mysql (configured on 127.0.0.1:3306:root/jaya )is used for storing and retrieving Users/Drivers Details, Logging of Details of pickup,drop and Rides etc
+
+ a. Mysql (configured on 127.0.0.1:3306:root/jaya )is used for storing and retrieving Users/Drivers Details, Logging of Details of pickup,drop and Rides etc
           Currently the Table contains 3 Tables. 
           database Name : Records 
           i) Table Name : driver_details;
