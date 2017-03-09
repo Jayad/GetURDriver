@@ -32,7 +32,7 @@ TechStack
           Have used GeoRadius Feature (https://redis.io/commands/georadius) For storing and retrieving GeoLocations, Lat Long and Distance 
           Example:  GEORADIUS location 15.0 37.0 5000 km WITHDIST WITHCOORD
 3. InfaStructure: 
-       Docker Ubuntu Container is been created and Installed with Redis and MySql and Jmeter.
+       Docker Ubuntu Container is been created and Installed with Redis, MySql,Java8 and Jmeter.
        The fat JAR has been deployed post development on the same.
        Jmeter is been used for Load Testing.
        
@@ -46,4 +46,9 @@ TechStack
        c. UpdateDriversReq: will call PUT API(/drivers/{id}/location) with a fixed ID in a valid range
        d. UpdateDriversReqFail: Will call PUT API with an invalid Out of Range Driver ID .
        
-
+Attachment Contains:
+  1. Source code in tar format
+  2. Jar of the source code.
+  3. Shell scripts to run to bring up the container
+  4. Results from Jmeter tests
+  5. PostMan Test Screenshot.
