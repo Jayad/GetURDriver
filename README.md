@@ -6,6 +6,9 @@ Description
   1. PUT: Update a Driver's location on every 60 second
   2. GET: Get all Drivers Nearby for a given Customer ( Based on Customers Current Latitude and Longitude,for a Given Radius and Given Limit to display )
   
+Prerequisite:
+The Project will work seemlessly in container, which will contain necessary dependencies. The system should have a docker installed.
+
 TechStack
 
 1. Language: The Project is Built using Java on Spring Tool Suite. For using inbuilt features(Like Thread) and performance factor    of Java, I have decided to Go with Spring on Java. 
@@ -52,3 +55,23 @@ Attachment Contains:
   3. Shell scripts to run to bring up the container
   4. Results from Jmeter tests
   5. PostMan Test Screenshot.
+
+
+Steps to Execute:
+
+1. Download the tar in your local system.
+2. Download the shell scripts , GoJek1.sh and GoJek2.sh
+3. Execute the same as below:
+  ./GoJek1.sh  #Which will pull the image and Start the Container
+  From other terminal execute
+  ./GoJek2.sh  #which will start all the services and copy necessary folders from local download to container
+   once inside the container,
+   execute
+   ./GoJek3.sh  #which will start execute the jar
+
+URL Endpoints:
+1. Valid Driver Location updates : http://localhost:8080/drivers/200/location {"latitude":-17.11111, "longitude":-77.571111, "accuracy":0.7}
+2. valid Driver Invalid Location: http://localhost:8080/drivers/200/location {"latitude":-1117.11111, "longitude":-717.571111, "accuracy":0.7} 
+3. Get Drivers nearBy Success :   http://localhost:8080/drivers?longitude=-115.0&latitude=37.0&limit=4&radius=90000
+4. Get Drivers nearby Failure :  http://localhost:8080/drivers?longitude=-115.0&latitude=37.0&limit=4&radius=900
+  
