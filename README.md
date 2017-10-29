@@ -74,7 +74,12 @@ Steps to Execute:
 1. Download the tar in your local system.
 2. Download the shell scripts , GoJek1.sh and GoJek2.sh
 3. Execute the same as below:
-   ./Statup.sh
+  ./GoJek1.sh  #Which will pull the image and Start the Container
+  From other terminal execute
+  ./GoJek2.sh  #which will start all the services and copy necessary folders from local download to container
+   once inside the container,
+   execute
+   ./GoJek3.sh  #which will start execute the jar
 
 URL Endpoints:
 
